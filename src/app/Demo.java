@@ -3,6 +3,11 @@ package app;
 public class Demo {
 
     public static void main(String[] args) {
-        System.out.println("hello");
+
+        Employee employee = Employee.builder().department("delivery")
+                .firstName("david").lastName("boon")
+                .emailId("davidboon@bt.com").build();
+
+        System.out.println(employee.toString());
     }
 }
